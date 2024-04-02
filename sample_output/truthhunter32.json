@@ -1,0 +1,301 @@
+{
+  "id": "930d882e-ca62-40a9-81c7-b271cb420b3e",
+  "name": "Hunter A. Koski",
+  "aliases": [
+    "TruthHunter32"
+  ],
+  "description": "Decker on a mission to uncover the conspiracies threatening his city",
+  "metatype": "human",
+  "gender": "male",
+  "birth_year": 2049,
+  "build": {
+    "gameplay": "standard",
+    "karma": {
+      "available": 25,
+      "initial": 25,
+      "gained": 0
+    },
+    "initial_skill_points": 46,
+    "initial_skill_group_points": 10,
+    "initial_nuyen": 140000,
+    "priority_table": {
+      "A": "skills",
+      "B": "attributes",
+      "C": "resources",
+      "D": "metatype",
+      "E": "-"
+    }
+  },
+  "attributes": {
+    "body": 3,
+    "agility": 3,
+    "reaction": 3,
+    "strength": 3,
+    "willpower": 4,
+    "logic": 5,
+    "intuition": 4,
+    "charisma": 3,
+    "edge": 5,
+    "essence": 6
+  },
+  "limits": {
+    "mental": 6,
+    "physical": 4,
+    "social": 6
+  },
+  "skill_groups": [
+    {
+      "name": "Cracking",
+      "skills": [
+        "Cybercombat",
+        "Electronic Warfare",
+        "Hacking"
+      ],
+      "rating": {
+        "base": 5,
+        "modified": 5
+      }
+    },
+    {
+      "name": "Electronics",
+      "skills": [
+        "Computer",
+        "Hardware",
+        "Software"
+      ],
+      "rating": {
+        "base": 5,
+        "modified": 5
+      }
+    }
+  ],
+  "skills": [
+    {
+      "name": "Hacking",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "logic",
+      "group": "cracking",
+      "is_grouped": true,
+      "defaulting": true,
+      "rating": {
+        "base": 5,
+        "modified": 5
+      }
+    },
+    {
+      "name": "Cybercombat",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "logic",
+      "group": "cracking",
+      "is_grouped": true,
+      "defaulting": true,
+      "rating": {
+        "base": 5,
+        "modified": 5
+      }
+    },
+    {
+      "name": "Electronic Warfare",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "logic",
+      "group": "cracking",
+      "is_grouped": true,
+      "defaulting": false,
+      "rating": {
+        "base": 5,
+        "modified": 5
+      }
+    },
+    {
+      "name": "Computer",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "logic",
+      "group": "electronics",
+      "is_grouped": true,
+      "defaulting": true,
+      "rating": {
+        "base": 5,
+        "modified": 5
+      }
+    },
+    {
+      "name": "Hardware",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "logic",
+      "group": "electronics",
+      "is_grouped": true,
+      "defaulting": false,
+      "rating": {
+        "base": 5,
+        "modified": 5
+      }
+    },
+    {
+      "name": "Software",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "logic",
+      "group": "electronics",
+      "is_grouped": true,
+      "defaulting": false,
+      "rating": {
+        "base": 5,
+        "modified": 5
+      }
+    },
+    {
+      "name": "Sneaking",
+      "type": "active",
+      "category": "physical",
+      "linked_attribute": "agility",
+      "group": "stealth",
+      "is_grouped": false,
+      "defaulting": true,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "Pistols",
+      "type": "active",
+      "category": "combat",
+      "linked_attribute": "agility",
+      "group": "firearms",
+      "is_grouped": false,
+      "defaulting": true,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "Longarms",
+      "type": "active",
+      "category": "combat",
+      "linked_attribute": "agility",
+      "group": "firearms",
+      "is_grouped": false,
+      "defaulting": true,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "Locksmith",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "agility",
+      "is_grouped": false,
+      "defaulting": false,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "Throwing Weapons",
+      "type": "active",
+      "category": "combat",
+      "linked_attribute": "agility",
+      "is_grouped": false,
+      "defaulting": true,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "Perception",
+      "type": "active",
+      "category": "physical",
+      "linked_attribute": "intuition",
+      "is_grouped": false,
+      "defaulting": true,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "Artisan",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "intuition",
+      "is_grouped": false,
+      "defaulting": false,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "Disguise",
+      "type": "active",
+      "category": "physical",
+      "linked_attribute": "intuition",
+      "group": "stealth",
+      "is_grouped": false,
+      "defaulting": true,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "Demolitions",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "logic",
+      "is_grouped": false,
+      "defaulting": true,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "First Aid",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "logic",
+      "group": "biotech",
+      "is_grouped": false,
+      "defaulting": true,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "Forgery",
+      "type": "active",
+      "category": "technical",
+      "linked_attribute": "logic",
+      "is_grouped": false,
+      "defaulting": true,
+      "rating": {
+        "base": 4,
+        "modified": 4
+      }
+    },
+    {
+      "name": "Pilot Groud Craft",
+      "type": "active",
+      "category": "vehicle",
+      "linked_attribute": "reaction",
+      "is_grouped": false,
+      "defaulting": true,
+      "rating": {
+        "base": 2,
+        "modified": 2
+      }
+    }
+  ]
+}

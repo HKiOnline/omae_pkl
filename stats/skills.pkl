@@ -1,0 +1,699 @@
+module io.hki.apps.omae.stats.skills
+
+import "../modules/Skills.pkl"
+
+// COMBAT ACTIVE SKILLS
+
+archery = new Skills.Skill {
+    name = "Archery"
+    type = "active"
+    category = "combat"
+    linked_attribute = "agility"
+    defaulting = true
+}
+
+automatics = new Skills.Skill {
+    name = "Automatics"
+    type = "active"
+    category = "combat"
+    linked_attribute = "agility"
+    group = "firearms"
+    defaulting = true
+}
+
+blades = new Skills.Skill {
+    name = "Blades"
+    type = "active"
+    category = "combat"
+    linked_attribute = "agility"
+    group = "close combat"
+    defaulting = true
+}
+
+clubs = new Skills.Skill {
+    name = "Clubs"
+    type = "active"
+    category = "combat"
+    linked_attribute = "agility"
+    group = "close combat"
+    defaulting = true
+}
+
+exotic_ranged_weapon = new Skills.Skill {
+    name = "Exotic Ranged Weapon (Specify)"
+    type = "active"
+    category = "combat"
+    linked_attribute = "agility"
+    defaulting = false
+}
+
+heavy_weapons = new Skills.Skill {
+    name = "Heavy Weapons"
+    type = "active"
+    category = "combat"
+    linked_attribute = "agility"
+    defaulting = true
+}
+
+longarms = new Skills.Skill {
+    name = "Longarms"
+    type = "active"
+    category = "combat"
+    linked_attribute = "agility"
+    group = "firearms"
+    defaulting = true
+}
+
+pistols = new Skills.Skill {
+    name = "Pistols"
+    type = "active"
+    category = "combat"
+    linked_attribute = "agility"
+    group = "firearms"
+    defaulting = true
+}
+
+throwing_weapons = new Skills.Skill {
+    name = "Throwing Weapons"
+    type = "active"
+    category = "combat"
+    linked_attribute = "agility"
+    defaulting = true
+}
+
+unarmed_combat = new Skills.Skill {
+    name = "Unarmed Combat"
+    type = "active"
+    category = "combat"
+    linked_attribute = "agility"
+    group = "close combat"
+    defaulting = true
+}
+
+// PHYSICAL ACTIVE SKILLS
+
+disguise = new Skills.Skill {
+    name = "Disguise"
+    type = "active"
+    category = "physical"
+    linked_attribute = "intuition"
+    group = "stealth"
+    defaulting = true
+}
+
+diving = new Skills.Skill {
+    name = "Diving"
+    type = "active"
+    category = "physical"
+    linked_attribute = "body"
+    defaulting = true
+}
+
+escape_artist = new Skills.Skill {
+    name = "Escape Artist"
+    type = "active"
+    category = "physical"
+    linked_attribute = "agility"
+    defaulting = true
+}
+
+free_fall = new Skills.Skill {
+    name = "Free-Fall"
+    type = "active"
+    category = "physical"
+    linked_attribute = "body"
+    defaulting = true
+}
+
+gymnastics = new Skills.Skill {
+    name = "Gymnastics"
+    type = "active"
+    category = "physical"
+    linked_attribute = "agility"
+    group = "athletics"
+    defaulting = true
+}
+
+palming = new Skills.Skill {
+    name = "Palming"
+    type = "active"
+    category = "physical"
+    linked_attribute = "agility"
+    group = "stealth"
+    defaulting = true
+}
+
+perception = new Skills.Skill {
+    name = "Perception"
+    type = "active"
+    category = "physical"
+    linked_attribute = "intuition"
+    defaulting = true
+}
+
+running = new Skills.Skill {
+    name = "Running"
+    type = "active"
+    category = "physical"
+    linked_attribute = "strength"
+    group = "athletics"
+    defaulting = true
+}
+
+sneaking = new Skills.Skill {
+    name = "Sneaking"
+    type = "active"
+    category = "physical"
+    linked_attribute = "agility"
+    group = "stealth"
+    defaulting = true
+}
+
+survival = new Skills.Skill {
+    name = "Survival"
+    type = "active"
+    category = "physical"
+    linked_attribute = "willpower"
+    group = "outdoors"
+    defaulting = true
+}
+
+swimming = new Skills.Skill {
+    name = "Swimming"
+    type = "active"
+    category = "physical"
+    linked_attribute = "strength"
+    group = "athletics"
+    defaulting = true
+}
+
+tracking = new Skills.Skill {
+    name = "Tracking"
+    type = "active"
+    category = "physical"
+    linked_attribute = "intuition"
+    group = "outdoors"
+    defaulting = true
+}
+
+// SOCIAL ACTIVE SKILLS
+
+con = new Skills.Skill {
+    name = "Con"
+    type = "active"
+    category = "social"
+    linked_attribute = "charisma"
+    group = "acting"
+    defaulting = true
+}
+
+etiquette = new Skills.Skill {
+    name = "Etiquette"
+    type = "active"
+    category = "social"
+    linked_attribute = "charisma"
+    group = "influence"
+    defaulting = true
+}
+
+impersonation = new Skills.Skill {
+    name = "Impersonation"
+    type = "active"
+    category = "social"
+    linked_attribute = "charisma"
+    group = "acting"
+    defaulting = true
+}
+
+instruction = new Skills.Skill {
+    name = "Instruction"
+    type = "active"
+    category = "social"
+    linked_attribute = "charisma"
+    defaulting = true
+}
+
+intimidation = new Skills.Skill {
+    name = "intimidation"
+    type = "active"
+    category = "social"
+    linked_attribute = "charisma"
+    defaulting = true
+}
+
+leadership = new Skills.Skill {
+    name = "Leadership"
+    type = "active"
+    category = "social"
+    linked_attribute = "charisma"
+    group = ""
+    defaulting = true
+}
+
+negotiation = new Skills.Skill {
+    name = "Negotiation"
+    type = "active"
+    category = "social"
+    linked_attribute = "charisma"
+    group = "influence"
+    defaulting = true
+}
+
+performance = new Skills.Skill {
+    name = "Performance"
+    type = "active"
+    category = "social"
+    linked_attribute = "charisma"
+    group = "acting"
+    defaulting = true
+}
+
+// MAGICAL SKILLS
+
+alchemy = new Skills.Skill {
+    name = "Alchemy"
+    type = "active"
+    category = "magical"
+    linked_attribute = "magic"
+    group = "enchanting"
+    defaulting = false
+}
+
+arcana = new Skills.Skill {
+    name = "Arcana"
+    type = "active"
+    category = "magical"
+    linked_attribute = "logic"
+    defaulting = false
+}
+
+artificing = new Skills.Skill {
+    name = "Artificing"
+    type = "active"
+    category = "magical"
+    linked_attribute = "magic"
+    group = "enchanting"
+    defaulting = false
+}
+
+assessing = new Skills.Skill {
+    name = "Assessing"
+    type = "active"
+    category = "magical"
+    linked_attribute = "intuition"
+    defaulting = false
+}
+
+astral_combat = new Skills.Skill {
+    name = "Astral Combat"
+    type = "active"
+    category = "magical"
+    linked_attribute = "willpower"
+    defaulting = false
+}
+
+banishing = new Skills.Skill {
+    name = "Banishing"
+    type = "active"
+    category = "magical"
+    linked_attribute = "magic"
+    group = "conjuring"
+    defaulting = false
+}
+
+binding = new Skills.Skill {
+    name = "Binding"
+    type = "active"
+    category = "magical"
+    linked_attribute = "magic"
+    group = "conjuring"
+    defaulting = false
+}
+
+counterspelling = new Skills.Skill {
+    name = "Counterspelling"
+    type = "active"
+    category = "magical"
+    linked_attribute = "magic"
+    group = "sorcery"
+    defaulting = false
+}
+
+disenchanting = new Skills.Skill {
+    name = "Disenchanting"
+    type = "active"
+    category = "magical"
+    linked_attribute = "magic"
+    group = "enchanting"
+    defaulting = false
+}
+
+ritual_spellcasting = new Skills.Skill {
+    name = "Ritual Spellcasting"
+    type = "active"
+    category = "magical"
+    linked_attribute = "magic"
+    group = "sorcery"
+    defaulting = false
+}
+
+spellcasting = new Skills.Skill {
+    name = "Spellcasting"
+    type = "active"
+    category = "magical"
+    linked_attribute = "magic"
+    group = "sorcery"
+    defaulting = false
+}
+
+summoning = new Skills.Skill {
+    name = "summoning"
+    type = "active"
+    category = "magical"
+    linked_attribute = "magic"
+    group = "conjuring"
+    defaulting = false
+}
+
+// RESONANCE SKILLS
+
+compiling = new Skills.Skill {
+    name = "Compiling"
+    type = "active"
+    category = "resonance"
+    linked_attribute = "resonance"
+    group = "tasking"
+    defaulting = false
+}
+
+decompiling = new Skills.Skill {
+    name = "Decompiling"
+    type = "active"
+    category = "resonance"
+    linked_attribute = "resonance"
+    group = "tasking"
+    defaulting = false
+}
+
+registering = new Skills.Skill {
+    name = "Registering"
+    type = "active"
+    category = "resonance"
+    linked_attribute = "resonance"
+    group = "tasking"
+    defaulting = false
+}
+
+// TECHNICAL ACTIVE SKILLS
+
+aeronautics_mechanic = new Skills.Skill {
+    name = "Aeronautics Mechanic"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "engineering"
+    defaulting = false
+}
+
+animal_handling = new Skills.Skill {
+    name = "Animal Handling"
+    type = "active"
+    category = "technical"
+    linked_attribute = "charisma"
+    defaulting = true
+}
+
+armorer = new Skills.Skill {
+    name = "Armorer"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    defaulting = true
+}
+
+artisan = new Skills.Skill {
+    name = "Artisan"
+    type = "active"
+    category = "technical"
+    linked_attribute = "intuition"
+    defaulting = false
+}
+
+automotive_mechanic = new Skills.Skill {
+    name = "Automotive Mechanic"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "engineering"
+    defaulting = false
+}
+
+biotechnology = new Skills.Skill {
+    name = "Biotechnology"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    defaulting = false
+}
+
+chemistry = new Skills.Skill {
+    name = "Chemistry"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    defaulting = false
+}
+
+computer = new Skills.Skill {
+    name = "Computer"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "electronics"
+    defaulting = true
+}
+
+cybercombat = new Skills.Skill {
+    name = "Cybercombat"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "cracking"
+    defaulting = true
+}
+
+cybertechnology = new Skills.Skill {
+    name = "Cybertechnology"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "biotech"
+    defaulting = false
+}
+
+demolitions = new Skills.Skill {
+    name = "Demolitions"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    defaulting = true
+}
+
+electronic_warfare = new Skills.Skill {
+    name = "Electronic Warfare"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "cracking"
+    defaulting = false
+}
+
+first_aid = new Skills.Skill {
+    name = "First Aid"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "biotech"
+    defaulting = true
+}
+
+forgery = new Skills.Skill {
+    name = "Forgery"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    defaulting = true
+}
+
+hacking = new Skills.Skill {
+    name = "Hacking"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "cracking"
+    defaulting = true
+}
+
+hardware = new Skills.Skill {
+    name = "Hardware"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "electronics"
+    defaulting = false
+}
+
+industrial_mechanic = new Skills.Skill {
+    name = "Industrial Mechanic"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "engineering"
+    defaulting = false
+}
+
+locksmith = new Skills.Skill {
+    name = "Locksmith"
+    type = "active"
+    category = "technical"
+    linked_attribute = "agility"
+    defaulting = false
+}
+
+medicine = new Skills.Skill {
+    name = "Medicine"
+    type = "active"
+    linked_attribute = "logic"
+    defaulting = false
+}
+
+nautical_mechanic = new Skills.Skill {
+    name = "Nautical Mechanic"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "engineering"
+    defaulting = false
+}
+
+navigation = new Skills.Skill {
+    name = "Navigation"
+    type = "active"
+    category = "technical"
+    linked_attribute = "intuition"
+    group = "outdoors"
+    defaulting = true
+}
+
+software = new Skills.Skill {
+    name = "Software"
+    type = "active"
+    category = "technical"
+    linked_attribute = "logic"
+    group = "electronics"
+    defaulting = false
+}
+
+// VEHICLE SKILLS
+
+gunnery = new Skills.Skill {
+    name = "Gunnery"
+    type = "active"
+    category = "vehicle"
+    linked_attribute = "agility"
+    defaulting = true
+}
+
+pilot_aerospace = new Skills.Skill {
+    name = "Pilot Aerospace"
+    type = "active"
+    category = "vehicle"
+    linked_attribute = "reaction"
+    defaulting = false
+}
+
+pilot_aircraft = new Skills.Skill {
+    name = "Pilot Aircraft"
+    type = "active"
+    category = "vehicle"
+    linked_attribute = "reaction"
+    defaulting = false
+}
+
+pilot_walker = new Skills.Skill {
+    name = "Pilot Walker"
+    type = "active"
+    category = "vehicle"
+    linked_attribute = "reaction"
+    defaulting = false
+}
+
+pilot_exotic_vehicle = new Skills.Skill {
+    name = "Pilot Exotic Vehicle (specify)"
+    type = "active"
+    category = "vehicle"
+    linked_attribute = "reaction"
+    defaulting = false
+}
+
+pilot_groud_craft = new Skills.Skill {
+    name = "Pilot Groud Craft"
+    type = "active"
+    category = "vehicle"
+    linked_attribute = "reaction"
+    defaulting = true
+}
+
+pilot_watercraft = new Skills.Skill {
+    name = "Pilot Watercraft"
+    type = "active"
+    category = "vehicle"
+    linked_attribute = "reaction"
+    defaulting = true
+}
+
+/// KNOWLEDGE SKILLS
+/// Note: all knowledge skills here should be amended. Their name should be changed to the specific skill.
+
+academic_knowledge = new Skills.Skill {
+    name = "Academic Knowledge"
+    type = "knowledge"
+    category = "academic"
+    linked_attribute = "logic"
+    defaulting = true
+}
+
+interrest_knowledge = new Skills.Skill {
+    name = "Interrest Knowledge"
+    type = "knowledge"
+    category = "interrest"
+    linked_attribute = "intuition"
+    defaulting = true
+}
+
+professional_knowledge = new Skills.Skill {
+    name = "Professional Knowledge"
+    type = "knowledge"
+    category = "professional"
+    linked_attribute = "logic"
+    defaulting = true
+}
+
+street_knowledge = new Skills.Skill {
+    name = "Street Knowledge"
+    type = "knowledge"
+    category = "street"
+    linked_attribute = "intuition"
+    defaulting = true
+}
+
+/// LANGUAGE SKILLS
+/// Note: language skill here should be amended. It's name should be changed to the specific skill.
+
+language = new Skills.Skill {
+    name = "Language"
+    type = "language"
+    category = "language"
+    linked_attribute = "intuition"
+    defaulting = true
+}

@@ -1,0 +1,6 @@
+module io.hki.apps.omae.AvailabilityStat
+
+class AvailabilityStat {
+    rating: Int
+    legality: "L" | "R" | "F"
+}

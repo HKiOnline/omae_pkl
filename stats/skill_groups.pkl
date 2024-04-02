@@ -1,0 +1,32 @@
+module io.hki.apps.omae.stats.skill_groups
+
+import "../modules/Skills.pkl"
+
+// COMBAT ACTIVE SKILL GROUPS
+
+acting = new Skills.SkillGroup {
+    name = "Acting"
+    skills = new Listing {
+        "Con"
+        "Impersonation"
+        "Performance"
+    }
+}
+
+cracking = new Skills.SkillGroup {
+    name = "Cracking"
+    skills = new Listing {
+        "Cybercombat"
+        "Electronic Warfare"
+        "Hacking"
+    }
+}
+
+electronics = new Skills.SkillGroup {
+    name = "Electronics"
+    skills = new Listing {
+        "Computer"
+        "Hardware"
+        "Software"
+    }
+}

@@ -1,0 +1,9 @@
+module io.hki.apps.omae.Metatypes
+
+human: String = "human"
+elf: String = "elf"
+dwarf: String = "dwarf"
+troll: String = "troll"
+ork: String = "ork"
+
+typealias Options = "human" | "elf" | "dwarf" | "troll" | "ork"

@@ -1,0 +1,18 @@
+module io.hki.apps.omae.Priorities
+
+metatype: String = "metatype"
+attribute: String = "attributes"
+magic: String = "magic"
+resonance: String = "resonance"
+skills: String = "skills"
+resources: String = "resources"
+
+typealias Options = "metatype" | "attributes" | "magic" | "resonance" | "skills" | "resources" | "-"
+
+class Table {
+    A: Options
+    B: Options
+    C: Options
+    D: Options
+    E: Options
+}

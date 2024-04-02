@@ -1,0 +1,15 @@
+module io.hki.apps.omae.Basics
+
+import "Metatypes.pkl"
+import "Genders.pkl"
+
+hidden Metatype = Metatypes
+hidden Gender = Genders
+
+id: String
+name: String
+aliases: Listing<String>?
+description: String
+metatype: Metatypes.Options
+gender: Genders.Options
+birth_year: Int?

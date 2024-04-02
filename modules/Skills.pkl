@@ -1,0 +1,31 @@
+module io.hki.apps.omae.Priorities
+
+import "Attributes.pkl"
+
+class Skill {
+    name: String
+    type: SkillTypeOption
+    category: SkillCategoryOption
+    linked_attribute: Attributes.Options
+    group: SkillGroupOption?
+    is_grouped: Boolean? = false
+    defaulting: Boolean
+    rating: Rating?
+    specializations: Listing<String>?
+}
+
+class SkillGroup {
+    name: String
+    skills: Listing<String>
+    rating: Rating?
+}
+
+class Rating {
+    base: Int
+    modified: Int
+}
+
+typealias SkillTypeOption = "active" | "knowledge" | "language"
+typealias SkillCategoryOption = "combat" | "physical" | "social" | "magical" | "resonance" | "technical" | "vehicle" | "academic" | "interest" | "professional" | "street" | "language"
+typealias SkillGroupOption = "firearms" | "close combat" | "stealth" | "athletics" | "outdoors" | "acting" | "influence" | "enchanting" | "conjuring" | "sorcery" | "tasking" | "engineering" | "electronics" | "cracking" | "biotech"
+

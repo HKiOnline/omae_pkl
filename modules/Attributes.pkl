@@ -1,0 +1,22 @@
+module io.hki.apps.omae.Attributes
+
+class AttributeStats {
+    
+    // Common attributes
+    body: Int
+    agility: Int
+    reaction: Int
+    strength: Int
+    willpower: Int
+    logic: Int
+    intuition: Int
+    charisma: Int
+
+    // Special attributes
+    edge: Int
+    essence: Int
+    magic: Int?
+    resonance: Int?
+}
+
+typealias Options = "body" | "agility" | "reaction" | "strength" | "willpower" | "logic" | "intuition" | "charisma" | "edge" | "essence" | "magic" | "resonance"

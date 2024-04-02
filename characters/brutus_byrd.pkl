@@ -1,0 +1,371 @@
+amends "../../modules/pc.pkl"
+
+name = "Brutus Byrd"
+description = "private investigator"
+metatype = "elf"
+gender = "male"
+birth_year = 2024
+
+attributes {
+    
+    body = 4
+    agility = 5
+    reaction = 3
+    strength = 4
+    willpower = 5
+    logic = 6
+    intuition = 4
+    charisma = 5
+
+    magic = 10
+    edge = 4
+    essence = 6
+}
+
+limits {
+    physical = 5
+    mental = 7
+    social = 7
+    astral = 7
+}
+
+condition_monitor {
+    physical = 10
+    stun = 11
+    overflow = 4
+}
+
+racial {
+    "low-light vision"
+}
+
+initative {
+    basic {
+        value = 13
+        dice = "4d6"
+    }
+    astral {
+        value = 10
+        dice = "5d6"
+    }
+}
+
+magic {
+    initiation_grade = 4
+
+    metamagic {
+        new {
+            name = "centering"
+            refrence = "sr5.325"
+        }
+        new {
+            name = "flexible signature"
+            refrence = "sr5.325"
+        }
+        new {
+            name = "masking"
+            refrence = "sr5.326"
+        }
+        new {
+            name = "psychometry"
+            refrence = "sg.145"
+        }
+    }
+
+    spells {
+        new {
+            name = "analyze truth"
+            refrence = "sr.286"
+        }
+        new {
+            name = "analyze magic"
+            refrence = "sr.285"
+        }
+        new {
+            name = "catalog"
+            refrence = "sg.107"
+        }
+        new {
+            name = "detect magic"
+            refrence = "sr.287"
+        }
+        new {
+            name = "firewater"
+            refrence = "sg.103"
+        }
+        new {
+            name = "lock"
+            refrence = "sg.117"
+        }
+        new {
+            name = "mana window"
+            refrence = "sg.107"
+        }
+        new {
+            name = "physical mask"
+            refrence = "sr.291"
+        }
+        new {
+            name = "preserve"
+            refrence = "sg.117"
+        }
+        new {
+            name = "stunball"
+            refrence = "sr.285"
+        }
+    }
+
+    rituals {
+        new {
+            name = "remote sensing"
+            refrence = "sr.297"
+        }
+        new {
+            name = "ward"
+            refrence = "sr.297"
+        }
+        new {
+            name = "watcher"
+            refrence = "sr.298"
+        }
+    }
+
+    foci {
+        new {
+            name = "silver hammer of laiban"
+            description = "small spiky hammer"
+            type = "weapon"
+            force = 2
+        }
+        new {
+            name = "silver scale"
+            description = "small amulet"
+            type = "power"
+            force = 3
+        }
+    }
+}
+
+skills {
+    new {
+        name = "arcana"
+        attribute = "logic"
+        value = 2
+    }
+    new {
+        name = "assensing"
+        attribute = "intuition"
+        value = 4
+    }
+    new {
+        name = "astral combat"
+        attribute = "willpower"
+        value = 2
+    }
+    new {
+        name = "banishing"
+        attribute = "magic"
+        value = 8
+    }
+    new {
+        name = ""
+        attribute = ""
+        value = 0
+    }
+    new {
+        name = "con"
+        attribute = "charisma"
+        value = 5
+    }
+    new {
+        name = "counterspelling"
+        attribute = "magic"
+        value = 4
+    }
+    new {
+        name = "etiquette"
+        attribute = "charisma"
+        value = 2
+    }
+    new {
+        name = "intimidation"
+        attribute = "charisma"
+        value = 3
+    }
+    new {
+        name = "longarms"
+        attribute = "agility"
+        value = 3
+    }
+    new {
+        name = "negotiation"
+        attribute = "charisma"
+        value = 2
+    }
+    new {
+        name = "pistols"
+        attribute = "agility"
+        value = 5
+    }
+    new {
+        name = "sneaking"
+        attribute = "agility"
+        value = 2
+    }
+    new {
+        name = "ritual spellcasting"
+        attribute = "magic"
+        value = 5
+    }
+    new {
+        name = "spellcasting"
+        attribute = "magic"
+        value = 8
+    }
+    new {
+        name = "unarmed combat"
+        attribute = "agility"
+        value = 2
+    }
+}
+
+contacts {
+    new {
+        name = "Black Rose"
+        description = "face and fixer to the underworld"
+        loyalty = 1
+        connection = 5
+    }
+    new {
+        name = "Brake"
+        description = "mechanic, smuggler and armorer"
+        loyalty = 2
+        connection = 3
+    }
+    new {
+        name = "Elena Lago"
+        description = "personal secretary to prince Hikaru"
+        loyalty = 2
+        connection = 6
+    }
+    new {
+        name = "Elisabet St. Clarence"
+        description = "captain of Knight Errant"
+        loyalty = 5
+        connection = 5
+    }
+    new {
+        name = "Bloody Vlad"
+        description = "ranking member of Elysian Vory"
+        loyalty = 1
+        connection = 4
+    }
+    new {
+        name = "Shaker"
+        description = "bartender at the Backroom"
+        loyalty = 3
+        connection = 7
+    }
+    new {
+        name = "ThruthSeeker32"
+        description = ""
+        loyalty = 0
+        connection = 0
+    }
+}
+
+weapons {
+
+    ranged {
+        new {
+            name = "Colt Agent Special"
+            type = "light pistol"
+            damage_type = "physical"
+            damage_value = 8
+            accuracy = 5
+            armor_penetration = 0
+            modes { "semiautomatic" }
+            recoil = 0
+            ammo = 8
+            ammo_loading = "clip"
+            refrence = "gh3.5"
+            modified {
+                accuracy = 7
+                armor_penetration = -4
+            }
+            upgrades {
+                new {
+                    type = "ammunition"
+                    name = "apds"
+                    armor_penetration = -4
+                }
+                new {
+                    type = "wireless"
+                    name = "targeting system"
+                    accuracy = 2
+                }
+            }
+        }
+
+        new {
+            name = "SAKO Aurora II"
+            type = "shotgun"
+            damage_type = "physical"
+            damage_value = 12
+            accuracy = 5
+            armor_penetration = -1
+            modes { "semiautomatic" }
+            recoil = 0
+            ammo = 4
+            ammo_loading = "internal magazine"
+            refrence = "hr.7"
+        }
+
+        new {
+            name = "Colt Heartstopper Shocker"
+            type = "taser"
+            damage_type = "stun (electricity)"
+            damage_value = 7
+            accuracy = 5
+            armor_penetration = -1
+            modes { "semiautomatic" }
+            recoil = 0
+            ammo = 4
+            ammo_loading = "internal magazine"
+            refrence = "hr.7"
+            modified {
+                accuracy = 7
+            }
+            upgrades {
+                new {
+                    type = "wireless"
+                    name = "targeting system"
+                    accuracy = 2
+                }
+            }
+        }
+
+    }
+
+    melee {
+
+    }
+
+}
+
+armor {
+    rating = 17
+}
+
+gear {
+
+}
+
+vehicles {
+
+}
+
+lifestyle {
+    level = "high"
+    nuyen = 100000
+}

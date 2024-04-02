@@ -1,0 +1,6 @@
+module io.hki.apps.omae.Genders
+
+male: String = "male"
+female: String = "female"
+
+typealias Options = "male" | "female"

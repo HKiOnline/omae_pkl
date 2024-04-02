@@ -1,0 +1,201 @@
+amends "../modules/Pc.pkl"
+
+import "../stats/skills.pkl" as Skills
+import "../stats/skill_groups.pkl" as SkillGroups
+
+/// TruthHunter32 - Decker from Elysium
+
+id = "930d882e-ca62-40a9-81c7-b271cb420b3e"
+name = "Hunter A. Koski"
+aliases { "TruthHunter32" } 
+description = "Decker on a mission to uncover the conspiracies threatening his city"
+metatype = Metatype.human
+gender = Gender.male
+birth_year = (2075 - 26) // Setting year minus his age
+
+build {
+    
+    gameplay = "standard"
+
+    karma = new {
+        available = 25
+        initial = 25
+        gained = 0
+    }
+
+    priority_table = new {
+        A = "skills"
+        B = "attributes"
+        C = "resources"
+        D = "metatype"
+        E = "-"
+    } 
+
+    initial_skill_points = 46
+    initial_skill_group_points = 10
+    initial_nuyen = 140000
+}
+
+attributes {
+
+    // Common attributes
+    body = 3
+    agility = 3
+    reaction = 3
+    strength = 3
+    willpower = 4
+    logic = 5
+    intuition = 4
+    charisma = 3
+
+    // Special attributes
+    edge = 5
+    essence = 6
+}
+// Note: Limits are calculated automatocally
+
+skill_groups {
+
+     (SkillGroups.cracking) {
+        rating = new {
+            base = 5
+            modified = base
+        }
+    }
+
+    (SkillGroups.electronics) {
+        rating = new {
+            base = 5
+            modified = base
+        }
+    }
+
+}
+
+local crackingRtg = skill_groups[0].rating
+local electronicsRtg = skill_groups[1].rating
+
+skills {
+
+    // cracking groups skills
+    (Skills.hacking) {
+        rating = crackingRtg
+        is_grouped = true
+    } 
+    (Skills.cybercombat) {
+        rating = crackingRtg
+        is_grouped = true
+    }
+    (Skills.electronic_warfare) {
+        rating = crackingRtg
+        is_grouped = true
+    }
+
+    // electronics skill group
+    (Skills.computer) {
+        rating = electronicsRtg
+        is_grouped = true
+    }
+    (Skills.hardware) {
+        rating = electronicsRtg
+        is_grouped = true
+    }
+    (Skills.software) {
+        rating = electronicsRtg
+        is_grouped = true
+    }
+
+    /* ======================================= */
+    // Agility based skills
+    (Skills.sneaking) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+
+    (Skills.pistols) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+    
+    (Skills.longarms) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+    
+    (Skills.locksmith) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+
+    (Skills.throwing_weapons) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+
+    /* ======================================= */
+    // Intuition based skills
+
+    (Skills.perception) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+    
+    (Skills.artisan) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+
+    (Skills.disguise) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+
+    /* ======================================= */
+    // Logic based skills
+    (Skills.demolitions) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+
+    (Skills.first_aid) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+
+    (Skills.forgery) {
+        rating = new {
+            base = 4
+            modified = base
+        }
+    }
+
+    /* ======================================= */
+    // REaction based skills
+    (Skills.pilot_groud_craft) {
+        rating = new {
+            base = 2
+            modified = base
+        }
+    }
+
+}

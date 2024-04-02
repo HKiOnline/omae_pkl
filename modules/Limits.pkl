@@ -1,0 +1,16 @@
+module io.hki.apps.omae.Limits
+
+import "Attributes.pkl"
+
+class Limits {
+    mental: Int
+    physical: Int
+    social: Int
+}
+
+// Calculates inherent limits of a character with full set of AttributeStats
+function calculateInherentLimits(attributes: Attributes.AttributeStats): Limits = new {
+    mental = (((attributes.logic * 2) + attributes.intuition + attributes.willpower)/3).ceil.toInt()
+    physical = (((attributes.strength * 2) + attributes.body + attributes.reaction)/3).ceil.toInt()
+    social = (((attributes.charisma * 2) + attributes.willpower + attributes.essence)/3).ceil.toInt()
+}

@@ -1,0 +1,29 @@
+module io.hki.apps.omae.stats.qualities
+
+import "../modules/QualityStat.pkl"
+
+
+
+analytical_mind = new QualityStat.QualityStat {
+    name = "Analytical Mind"
+    cost = 5
+    type = "positive"
+    reference = "SR5.72"
+    description = "+2 dice pool modifier to any Logic-tests involving pattern recognition, evidence analysis, clue hunting, or solving puzzles. Reduces the time it takes to solve such a problem by half."
+}
+
+codeslinger = new QualityStat.QualityStat {
+    name = "Codeslinger"
+    cost = 10
+    type = "positive"
+    reference = "SR5.72"
+    description = "The character is adept at performing a particular Matrix action and receives a +2 dice pool mod- ifier to it."
+}
+
+quick_healer = new QualityStat.QualityStat {
+    name = "Quick Healer"
+    cost = 3
+    type = "positive"
+    reference = "SR5.77"
+    description = "+2 dice pool modifier to all Healing Tests"
+}

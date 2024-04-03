@@ -1,25 +1,10 @@
 module io.hki.apps.omae.gear.Cyberdecks
 
-import "../modules/AvailabilityStat.pkl"
+import "../modules/CyberdeckStats.pkl"
 
-class Cyberdeck {
-    name: String
-    rating: Int
-    attribute_array: Listing<Int>
-    program_slots: Int
-    availability: AvailabilityStat
-    cost: Int
-    refrence: String
 
-    configuration {
-        attack: Int
-        sleaze: Int
-        data_processing: Int
-        firewall: Int
-    }?
-}
-
-novatech_navigator: Cyberdeck = new {
+novatech_navigator: CyberdeckStats = new {
+    
     name = "Novatech Navigator"
     rating = 3
     attribute_array = List(6, 5, 4, 3)

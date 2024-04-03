@@ -1,0 +1,16 @@
+module io.hki.apps.omae.CyberdeckStats
+
+class CyberdeckStats extends GearStats {
+
+    rating: Int
+    attribute_array: Listing<Int>
+    program_slots: Int
+
+    configuration {
+        attack: Int
+        sleaze: Int
+        data_processing: Int
+        firewall: Int
+    }?
+    
+}

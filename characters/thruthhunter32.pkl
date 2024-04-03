@@ -2,6 +2,7 @@ amends "../modules/Pc.pkl"
 
 import "../stats/skills.pkl" as Skills
 import "../stats/skill_groups.pkl" as SkillGroups
+import "../stats/qualities.pkl" as Qualities
 
 /// TruthHunter32 - Decker from Elysium
 
@@ -53,6 +54,14 @@ attributes {
     essence = 6
 }
 // Note: Limits are calculated automatocally
+
+qualities {
+    Qualities.analytical_mind
+    (Qualities.codeslinger) {
+        note = "+2 to Hack on the Fly Matrix Action"
+    }
+    Qualities.quick_healer
+}
 
 skill_groups {
 

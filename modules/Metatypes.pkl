@@ -6,4 +6,9 @@ dwarf: String = "dwarf"
 troll: String = "troll"
 ork: String = "ork"
 
-typealias Options = "human" | "elf" | "dwarf" | "troll" | "ork"
+typealias Options = 
+"human" | 
+"elf" | 
+"dwarf" | 
+"troll" | 
+"ork"

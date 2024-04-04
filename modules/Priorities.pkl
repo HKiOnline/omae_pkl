@@ -7,7 +7,14 @@ resonance: String = "resonance"
 skills: String = "skills"
 resources: String = "resources"
 
-typealias Options = "metatype" | "attributes" | "magic" | "resonance" | "skills" | "resources" | "-"
+typealias Options = 
+"metatype" | 
+"attributes" | 
+"magic" | 
+"resonance" | 
+"skills" | 
+"resources" | 
+"-"
 
 class Table {
     A: Options

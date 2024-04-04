@@ -19,4 +19,16 @@ class AttributeStats {
     resonance: Int?
 }
 
-typealias Options = "body" | "agility" | "reaction" | "strength" | "willpower" | "logic" | "intuition" | "charisma" | "edge" | "essence" | "magic" | "resonance"
+typealias Options = 
+"body" |
+"agility" |
+"reaction" |
+"strength" |
+"willpower" |
+"logic" |
+"intuition" |
+"charisma" |
+"edge" |
+"essence" |
+"magic" |
+"resonance"

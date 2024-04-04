@@ -25,7 +25,39 @@ class Rating {
     modified: Int
 }
 
-typealias SkillTypeOption = "active" | "knowledge" | "language"
-typealias SkillCategoryOption = "combat" | "physical" | "social" | "magical" | "resonance" | "technical" | "vehicle" | "academic" | "interest" | "professional" | "street" | "language"
-typealias SkillGroupOption = "firearms" | "close combat" | "stealth" | "athletics" | "outdoors" | "acting" | "influence" | "enchanting" | "conjuring" | "sorcery" | "tasking" | "engineering" | "electronics" | "cracking" | "biotech"
+typealias SkillTypeOption = 
+"active" |
+"knowledge" |
+"language"
+
+typealias SkillCategoryOption = 
+"combat" |
+"physical" |
+"social" |
+"magical" |
+"resonance" |
+"technical" |
+"vehicle" |
+"academic" |
+"interest" |
+"professional" |
+"street" |
+"language"
+
+typealias SkillGroupOption = 
+"firearms" |
+"close combat" |
+"stealth" |
+"athletics" |
+"outdoors" |
+"acting" |
+"influence" |
+"enchanting" |
+"conjuring" |
+"sorcery" |
+"tasking" |
+"engineering" |
+"electronics" |
+"cracking" |
+"biotech"
 

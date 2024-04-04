@@ -54,31 +54,23 @@ attributes {
     essence = 6
 }
 // Note: Limits are calculated automatocally
+/*
+    "mental": 6,
+    "physical": 4,
+    "social": 6
+*/
 
 qualities {
     Qualities.analytical_mind
-    (Qualities.codeslinger) {
-        note = "+2 to Hack on the Fly Matrix Action"
-    }
+    (Qualities.codeslinger) { note = "+2 to Hack on the Fly Matrix Action" }
+    Qualities.natural_hardening
     Qualities.quick_healer
+    Qualities.social_stress
 }
 
 skill_groups {
-
-     (SkillGroups.cracking) {
-        rating = new {
-            base = 5
-            modified = base
-        }
-    }
-
-    (SkillGroups.electronics) {
-        rating = new {
-            base = 5
-            modified = base
-        }
-    }
-
+    (SkillGroups.cracking) { rating = new { base = 5 modified = base }}
+    (SkillGroups.electronics) { rating = new { base = 5 modified = base }}
 }
 
 local crackingRtg = skill_groups[0].rating
@@ -87,124 +79,41 @@ local electronicsRtg = skill_groups[1].rating
 skills {
 
     // cracking groups skills
-    (Skills.hacking) {
-        rating = crackingRtg
-        is_grouped = true
-    } 
-    (Skills.cybercombat) {
-        rating = crackingRtg
-        is_grouped = true
-    }
-    (Skills.electronic_warfare) {
-        rating = crackingRtg
-        is_grouped = true
-    }
+    (Skills.hacking) { rating = crackingRtg is_grouped = true } 
+    (Skills.cybercombat) { rating = crackingRtg is_grouped = true }
+    (Skills.electronic_warfare) { rating = crackingRtg is_grouped = true }
 
     // electronics skill group
-    (Skills.computer) {
-        rating = electronicsRtg
-        is_grouped = true
-    }
-    (Skills.hardware) {
-        rating = electronicsRtg
-        is_grouped = true
-    }
-    (Skills.software) {
-        rating = electronicsRtg
-        is_grouped = true
-    }
+    (Skills.computer) { rating = electronicsRtg is_grouped = true }
+    (Skills.hardware) { rating = electronicsRtg is_grouped = true }
+    (Skills.software) { rating = electronicsRtg  is_grouped = true }
 
     /* ======================================= */
     // Agility based skills
-    (Skills.sneaking) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
 
-    (Skills.pistols) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
-    
-    (Skills.longarms) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
-    
-    (Skills.locksmith) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
-
-    (Skills.throwing_weapons) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
+    (Skills.sneaking) { rating = new { base = 4 modified = base }}
+    (Skills.pistols) { rating = new { base = 4 modified = base }}
+    (Skills.longarms) { rating = new { base = 4 modified = base }}
+    (Skills.locksmith) { rating = new { base = 4 modified = base }}
+    (Skills.throwing_weapons) { rating = new { base = 4 modified = base }}
 
     /* ======================================= */
     // Intuition based skills
 
-    (Skills.perception) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
-    
-    (Skills.artisan) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
-
-    (Skills.disguise) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
+    (Skills.perception) { rating = new { base = 4 modified = base }}
+    (Skills.artisan) { rating = new { base = 4 modified = base }}
+    (Skills.disguise) { rating = new { base = 4 modified = base }}
 
     /* ======================================= */
     // Logic based skills
-    (Skills.demolitions) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
 
-    (Skills.first_aid) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
-
-    (Skills.forgery) {
-        rating = new {
-            base = 4
-            modified = base
-        }
-    }
+    (Skills.demolitions) { rating = new { base = 4 modified = base }}
+    (Skills.first_aid) { rating = new { base = 4 modified = base }}
+    (Skills.forgery) { rating = new { base = 4 modified = base }}
 
     /* ======================================= */
-    // REaction based skills
-    (Skills.pilot_groud_craft) {
-        rating = new {
-            base = 2
-            modified = base
-        }
-    }
+    // Reaction based skills
+    
+    (Skills.pilot_groud_craft) { rating = new { base = 2 modified = base }}
 
 }

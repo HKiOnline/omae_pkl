@@ -3,6 +3,9 @@ module io.hki.apps.omae.stats.qualities
 import "../modules/QualityStat.pkl"
 
 
+/***********************************************/
+/*********** POSITIVE QUALITIES ****************/
+/***********************************************/
 
 analytical_mind = new QualityStat.QualityStat {
     name = "Analytical Mind"
@@ -17,7 +20,15 @@ codeslinger = new QualityStat.QualityStat {
     cost = 10
     type = "positive"
     reference = "SR5.72"
-    description = "The character is adept at performing a particular Matrix action and receives a +2 dice pool mod- ifier to it."
+    description = "+2 dice pool modifier to one pre-selected Matrix action."
+}
+
+natural_hardening = new QualityStat.QualityStat {
+    name = "Natural Hardening"
+    cost = 10
+    type = "positive"
+    reference = "SR5.76"
+    description = "+1 to natural biofeed- back filtering."
 }
 
 quick_healer = new QualityStat.QualityStat {
@@ -25,5 +36,18 @@ quick_healer = new QualityStat.QualityStat {
     cost = 3
     type = "positive"
     reference = "SR5.77"
-    description = "+2 dice pool modifier to all Healing Tests"
+    description = "+2 dice pool modifier to all Healing Tests."
+}
+
+
+/***********************************************/
+/*********** NEGATIVE QUALITIES ****************/
+/***********************************************/
+
+social_stress = new QualityStat.QualityStat {
+    name = "Social Stress"
+    cost = -8
+    type = "negative"
+    reference = "SR5.85"
+    description = "-1 to Leadership and Etiquette skill tests. More social skill tests."
 }

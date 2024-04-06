@@ -1,0 +1,9 @@
+module io.hki.apps.omae.ContactStats
+
+class ContactStats {
+    name: String
+    connections: Int
+    loyality: Int
+    description: String
+    note: String?
+}

@@ -1,12 +1,12 @@
 module io.hki.apps.omae.GearStats
 
-import "AvailabilityStat.pkl"
+import "AvailabilityStats.pkl"
 
 class GearStats {
 
     name: String
     description: String?
-    availability: AvailabilityStat
+    availability: AvailabilityStats
     cost: Int
     refrence: String
     

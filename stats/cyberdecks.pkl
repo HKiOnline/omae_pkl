@@ -3,16 +3,16 @@ module io.hki.apps.omae.gear.Cyberdecks
 import "../modules/CyberdeckStats.pkl"
 
 
-novatech_navigator: CyberdeckStats = new {
+novatech_navigator: CyberdeckStats.CyberdeckStats = new {
     
     name = "Novatech Navigator"
     rating = 3
-    attribute_array = List(6, 5, 4, 3)
+    attribute_array = new Listing{ 6 5 4 3 }
     program_slots = 3
-    availability {
+    availability = new {
         rating = 6
         legality = "R"
     }
-    cost = 205750
+    cost = 205_750
     refrence = "SR5.227"
 }

@@ -1,0 +1,10 @@
+module io.hki.apps.omae.MatrixStats
+
+import "CyberdeckStats.pkl"
+import "LivingPersonaStats.pkl"
+
+open class MatrixStats {
+    cyberdeck: CyberdeckStats.CyberdeckStats? // primary cyberdeck; decks can be listed in gear too
+    living_persona: LivingPersonaStats.LivingPersonaStats?
+}
+

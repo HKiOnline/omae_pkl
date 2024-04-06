@@ -1,0 +1,3 @@
+module io.hki.apps.omae.LivingPersonaStats
+
+class LivingPersonaStats {}

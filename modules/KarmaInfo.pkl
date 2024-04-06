@@ -1,0 +1,7 @@
+module io.hki.apps.omae.KarmInfo
+
+class KarmaInfo {
+    available: Int
+    initial: Int
+    gained: Int
+}

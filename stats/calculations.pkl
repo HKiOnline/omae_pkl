@@ -1,0 +1,11 @@
+module io.hki.apps.omae.stats.qualities
+
+import "../modules/Attributes.pkl"
+import "../modules/InitiativeStats.pkl"
+
+
+// Calculates characters condition monitor values when they are at their maximum
+function calculateBasicInitiative(attributes: Attributes.AttributeStats): InitiativeStats.InitiativeStat = new {
+    value = (attributes.intuition + attributes.reaction).ceil.toInt()
+    dice = 1
+} 

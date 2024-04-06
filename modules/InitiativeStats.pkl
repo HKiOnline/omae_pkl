@@ -1,0 +1,19 @@
+module io.hki.apps.omae.InitiativeStats
+
+import "Attributes.pkl"
+
+class InitiativeStats {
+    basic: InitiativeStat
+
+    astral: InitiativeStat?
+    matrix_ar: InitiativeStat?
+    matrix_vr_cold: InitiativeStat?
+    matrix_vr_hot: InitiativeStat?
+}
+
+class InitiativeStat {
+        value: Int
+        dice: Int
+}
+
+// Note: See stats/calculations.pkl for functions related to initiative calculation

@@ -2,31 +2,21 @@ module io.hki.apps.omae.Pc
 
 import "Metatypes.pkl"
 import "Genders.pkl"
-import "Priorities.pkl"
+import "BuildInfo.pkl"
 import "Attributes.pkl"
-import "QualityStat.pkl"
+import "QualityStats.pkl"
 import "Limits.pkl"
+import "ConditionMonitor.pkl"
+import "InitiativeStats.pkl"
 import "Skills.pkl"
+
+import "MatrixStats.pkl"
+import "ContactStats.pkl"
 
 hidden Metatype = Metatypes
 hidden Gender = Genders
 hidden Priority = Priorities
 hidden Rating: Skills.Rating 
-
-class KarmaInfo {
-    available: Int
-    initial: Int
-    gained: Int
-}
-
-class BuildInfo {
-    gameplay: String
-    karma: KarmaInfo
-    initial_skill_points: Int
-    initial_skill_group_points: Int
-    initial_nuyen: Int
-    priority_table: Priorities.Table?
-}
 
 id: String
 name: String
@@ -36,11 +26,49 @@ metatype: Metatypes.Options
 gender: Genders.Options?
 birth_year: Int?
 
-build: BuildInfo?
-
 attributes: Attributes.AttributeStats
 limits = Limits.calculateInherentLimits(attributes)
-qualities: Listing<QualityStat.QualityStat>?
+condition_monitor = ConditionMonitor.calculateConcditionMonitor(attributes)
+initiative: InitiativeStats.InitiativeStats
+
+qualities: Listing<QualityStats.QualityStats>?
 
 skill_groups: Listing<Skills.SkillGroup>?
 skills: Listing<Skills.Skill>?
+
+/*
+still missing the following:
+
+magic
+    initiate_grade
+    metamagic
+    spells
+    rituals
+    powers
+    foci
+resonance
+    living_persona
+    complex_forms
+    registered_sprites
+*/
+matrix: MatrixStats.MatrixStats?
+/*
+    cyberdecks
+        attributes
+        programs
+        agents
+augmentations
+gear
+    weapons
+        ranged
+        melee
+    armor
+    ids_and_licenses
+
+lifestyle
+nuyen
+*/
+
+contacts: Listing<ContactStats.ContactStats>
+
+build: BuildInfo.BuildInfo?

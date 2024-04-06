@@ -1,0 +1,16 @@
+module io.hki.apps.omae.ConcditionMonitor
+
+import "Attributes.pkl"
+
+class ConcditionMonitor {
+    physical: Int
+    stun: Int
+    overflow: Int
+}
+
+// Calculates characters condition monitor values when they are at their maximum
+function calculateConcditionMonitor(attributes: Attributes.AttributeStats): ConcditionMonitor = new {
+    physical = ((attributes.body / 2) + 8).ceil.toInt()
+    stun = ((attributes.willpower / 2) + 8).ceil.toInt()
+    overflow = attributes.body
+}

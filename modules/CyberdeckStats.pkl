@@ -1,16 +1,27 @@
 module io.hki.apps.omae.CyberdeckStats
 
-class CyberdeckStats extends GearStats {
+//import "GearStats.pkl"
+import "AvailabilityStats.pkl"
+
+class CyberdeckStats {
+
+    name: String
+    description: String?
+    availability: AvailabilityStats.AvailabilityStats
+    cost: Int
+    refrence: String
 
     rating: Int
     attribute_array: Listing<Int>
     program_slots: Int
 
-    configuration {
+    configuration: CyberDeckConfiguration?
+    
+}
+
+class CyberDeckConfiguration {
         attack: Int
         sleaze: Int
         data_processing: Int
         firewall: Int
-    }?
-    
 }

@@ -1,0 +1,13 @@
+module io.hki.apps.omae.BuildInfo
+
+import "KarmaInfo.pkl"
+import "Priorities.pkl"
+
+class BuildInfo {
+    gameplay: String
+    karma: KarmaInfo.KarmaInfo
+    initial_skill_points: Int
+    initial_skill_group_points: Int
+    initial_nuyen: Int
+    priority_table: Priorities.Table?
+}

@@ -1,41 +1,20 @@
 amends "../modules/Pc.pkl"
 
-import "../stats/skills.pkl" as Skills
-import "../stats/skill_groups.pkl" as SkillGroups
-import "../stats/qualities.pkl" as Qualities
+import "../stats/skills.pkl" as Skills // List of available skills
+import "../stats/skill_groups.pkl" as SkillGroups // List of available skill groups
+import "../stats/qualities.pkl" as Qualities // List of available character qualities
+import "../stats/calculations.pkl" as Calculations // Helper calculation functions
+import "../stats/cyberdecks.pkl" as Cyberdecks // List of available cyberdecks
 
 /// TruthHunter32 - Decker from Elysium
 
 id = "930d882e-ca62-40a9-81c7-b271cb420b3e"
 name = "Hunter A. Koski"
 aliases { "TruthHunter32" } 
-description = "Decker on a mission to uncover the conspiracies threatening his city"
+description = "Up and coming decker on a mission to uncover the conspiracies threatening his city"
 metatype = Metatype.human
 gender = Gender.male
 birth_year = (2075 - 26) // Setting year minus his age
-
-build {
-    
-    gameplay = "standard"
-
-    karma = new {
-        available = 25
-        initial = 25
-        gained = 0
-    }
-
-    priority_table = new {
-        A = "skills"
-        B = "attributes"
-        C = "resources"
-        D = "metatype"
-        E = "-"
-    } 
-
-    initial_skill_points = 46
-    initial_skill_group_points = 10
-    initial_nuyen = 140000
-}
 
 attributes {
 
@@ -54,13 +33,14 @@ attributes {
     essence = 6
 }
 // Note: Limits are calculated automatocally
-/*
-    "mental": 6,
-    "physical": 4,
-    "social": 6
-*/
+// "mental": 6, "physical": 4, "social": 6
+
+initiative = new {
+    basic = Calculations.calculateBasicInitiative(attributes)
+}
 
 qualities {
+    Qualities.human_edge
     Qualities.analytical_mind
     (Qualities.codeslinger) { note = "+2 to Hack on the Fly Matrix Action" }
     Qualities.natural_hardening
@@ -116,4 +96,56 @@ skills {
     
     (Skills.pilot_groud_craft) { rating = new { base = 2 modified = base }}
 
+}
+
+matrix {
+    cyberdeck = (Cyberdecks.novatech_navigator) {
+        configuration = new {
+            attack = 3
+            sleaze = 6
+            data_processing = 4
+            firewall = 5
+        }
+    }
+}
+
+contacts {
+    new {
+        name = "Brutus Ashcroft"
+        loyality = 4
+        connections = 2
+        description = "Friend and a Johnson"
+        note = "New in town, has an influential boss"
+    }
+    new {
+        name = "Electro"
+        loyality = 1
+        connections = 2
+        description = "Fixer and a Johnson"
+        note = "Leader of the small ElectricSheep hacktivist group"
+    }
+}
+
+
+build {
+    
+    gameplay = "standard"
+
+    karma = new {
+        available = 5
+        initial = 25
+        gained = 0
+    }
+
+    priority_table = new {
+        A = "skills"
+        B = "attributes"
+        C = "resources"
+        D = "metatype"
+        E = "-"
+    } 
+
+    initial_skill_points = 46
+    initial_skill_group_points = 10
+    initial_nuyen = 140000
 }
